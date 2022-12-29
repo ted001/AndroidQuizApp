@@ -16,11 +16,10 @@
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionBarTheme"
+            android:theme="@style/NoactionBar"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
@@ -30,7 +29,13 @@
         </activity>
         <activity
             android:name="com.ted.quiz.QuizQuestionsActivity"
+            android:theme="@style/NoactionBar"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoactionBar" />
     </application>
 
 </manifest>
